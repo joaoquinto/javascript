@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Javascript</title>
+</head>
+
+<body>
+    <script>
+        function exercicio01() {
+            var endereco = {
+                rua: "Rua dos pinheiros",
+                numero: 1293,
+                bairro: "Centro",
+                cidade: "São Paulo",
+                uf: "SP"
+            }
+
+            return "O usuário mora em " + endereco.cidade + " / " + endereco.uf + " ," + " no bairro " + endereco.bairro + " , na " + endereco.rua + " com o " + endereco.numero + "."
+        }
+        console.log(exercicio01());
+
+        function numeroPar(x, y) {
+
+            while (x <= y) {
+
+                if (x % 2 == 0) {
+                    console.log("N° " + x);
+                }
+                x++;
+            }
+        }
+
+        numeroPar(1, 50);
+
+        function temHabilidade(skills) {
+
+            if (skills.indexOf("JavaScript") == true) {
+                console.log(true);
+            } else {
+                console.log(false);
+            }
+
+        }
+
+        var skills = ["ReactJS", "JavaScript", "React Native"];
+        temHabilidade(skills);
+
+        function experiencia(anos) {
+            if (anos <= 0 && anos >= 1) {
+                console.log("Iniciante");
+            } else if (anos > 1 && anos <= 3) {
+                console.log("Intermediário");
+            } else if (anos >= 3 && anos <= 6) {
+                console.log("Avançado");
+            } else if (anos > 7) {
+                console.log("Jedi Master");
+            }
+
+        }
+        experiencia(85);
+
+
+        var usuarios = [
+            {
+                nome: "Diego",
+                habilidades: ["Javascript", "ReactJS", "Reduz"]
+            },
+
+            {
+                nome: "Gabriel",
+                habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+            }
+        ];
+
+        for (const iterator of usuarios) {
+            console.log("O " + iterator.nome + " possui as habilidades " + iterator.habilidades.join());
+        }
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
