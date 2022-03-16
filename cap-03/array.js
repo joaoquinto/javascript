@@ -5,30 +5,29 @@ let daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wedbesdat', 'Thursday', 'Frida
 /* for (let index = 0; index < daysOfWeek.length; index++) {
   const day = daysOfWeek[index];
   console.log(day);
-} */
+} 
 
 let numbers = [0,1,2,3,4,5,6,7,8,9]
 
 numbers[numbers.length] = 10;
+console.log([numbers.length - 1]);
 
-/* console.log([numbers.length - 1]);
- */
 numbers.push(11,12,13)
 
-/* console.log(numbers); */
+console.log(numbers);
 
 numbers.unshift(-4,-3,-2,-1)
-/* console.log(numbers); */
+console.log(numbers);
 numbers.pop()
-/* console.log(numbers); */
-/* numbers.shift()
-console.log(numbers); */
+console.log(numbers);
+numbers.shift()
+console.log(numbers);
 
 numbers.splice(5,3)
-/* console.log(numbers); */
+console.log(numbers);
 numbers.splice(5,0,2,3,4)
-/* console.log(numbers); */
-
+console.log(numbers);
+*/
 let averageTemp = []
 
 averageTemp[0] = [
@@ -73,7 +72,34 @@ for (let i = 0; i < matrix3x3x3.length; i++) {
     const element1 = element0[j];
     for (let z = 0; z < element1.length; z++) {
       const element2 = element1[z];
-      console.log(element2);
+/*       console.log(element2); */
     }
   }
 }
+
+const zero = 0
+
+const positiveNumbers = [1,2,3]
+const negativeNumbers = [-3,-2,-1]
+
+let numbers = negativeNumbers.concat(zero,positiveNumbers)
+
+console.log(numbers);
+
+function isEven(nums) {
+  const isTrue = []
+  nums.forEach( num => num % 2 === 0 ? isTrue.unshift(true) : isTrue.unshift(false))
+  console.log('isEven',isTrue);
+}
+
+isEven(numbers)
+
+const isTrue = numbers.map(num => num % 2 === 0 ? true : false)
+
+console.log('isTrue',isTrue);
+
+const sumNumbers = numbers.reduce((acc, cur)=>{
+   return acc+=cur
+},0)
+
+console.log(sumNumbers);
