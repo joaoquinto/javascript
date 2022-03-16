@@ -1,5 +1,3 @@
-/* let [nome, cpf, idade, cep] = ['joão', '01708398503', 22, 41295630, 71991792684]
- */
 let foo = ['one', 'two', 'three']
 
 const [one, two, three] = foo
