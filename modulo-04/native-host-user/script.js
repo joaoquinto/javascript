@@ -1,1 +1,1 @@
-/* console.log(typeof Array.from !== 'undefined'); */
+console.log(typeof Array.from !== 'undefined');
