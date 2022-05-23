@@ -61,9 +61,6 @@ const lastName = nome.slice(startLastName, endLastName)
 
 console.log(lastName);
 
-
-
-
 function Loteamento(numeroCasa, QD, ...numerosTelefone) {
   this.numeroCasa = numeroCasa,
     this.qD = QD,
@@ -77,6 +74,28 @@ function Loteamento(numeroCasa, QD, ...numerosTelefone) {
 
 const loteamento = new Loteamento(97, 07, "71 9991792684 ", "71 33289584", "71 33289514", "71 32933337")
 
-
-
 console.log(loteamento.showData());
+
+const kiko = "Ta".repeat(3)
+console.log(kiko);
+
+
+let listaItens = 'Camisas Bonés Calças Bermudas Vestidos Saias';
+/* 
+ * String.prototype.replaceAll() retorna uma cópia da string com a modificação 
+ * dos itens que derem match na condicional.
+ * Pode ser usado regex, para filtrar o match
+ */
+listaItens = listaItens.replaceAll(' ', ', ')
+console.log(listaItens);
+
+/* console.log(listaItens.replace(/[ ]+/g, ', ')); */
+
+/* 
+ * String.prototype.split() retorna um array
+ * dos itens que estiverem dentro da string.
+ * Separar os itens pelo separador informado
+ */
+const arrayItens = listaItens.replaceAll(' ', '').split(',')
+console.log(arrayItens);
+
